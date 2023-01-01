@@ -45,7 +45,7 @@ function onDateValueChanged(): void {
 				.padStart(2, "0")}/${currentDate
 				.getFullYear()
 				.toString()
-				.slice(2)} ${weekday[currentDate.getDay()]} | 0hrs |\n`;
+				.slice(2)} ${weekday[currentDate.getDay()]} | 0hrs | \n`;
 
 			// Get tomorrow
 			tomorrow.setDate(currentDate.getDate() + 1);
