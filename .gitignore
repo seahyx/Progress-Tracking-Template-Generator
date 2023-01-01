@@ -39,8 +39,16 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+node_modules/*
 jspm_packages/
+
+# Re-include required flowbite node modules
+!node_modules/flowbite/
+node_modules/flowbite/*
+!node_modules/flowbite/dist/
+node_modules/flowbite/dist/*
+!node_modules/flowbite/dist/flowbite.js
+!node_modules/flowbite/dist/datepicker.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -89,7 +97,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
