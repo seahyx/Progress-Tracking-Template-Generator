@@ -48,7 +48,8 @@ function onDateValueChanged(): void {
 				.slice(2)} ${weekday[currentDate.getDay()]} | 0hrs | \n`;
 
 			// Get tomorrow
-			tomorrow.setDate(currentDate.getDate() + 1);
+			tomorrow = new Date(currentDate);
+			tomorrow.setDate(tomorrow.getDate() + 1);
 
 			if (currentDate.getDay() == 0) {
 				if (tomorrow.getDate() == 1) {
